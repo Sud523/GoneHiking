@@ -19,7 +19,7 @@ public class InteractionInstigator : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Interactable interactable = other.GetComponent<Interactable>();
         if (interactable != null)
@@ -28,7 +28,7 @@ public class InteractionInstigator : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         Interactable interactable = other.GetComponent<Interactable>();
         if (interactable != null)
